@@ -4,7 +4,7 @@ First project using React.  One-pager (React not necessary for that) but useful 
 
 Specific things that were learned -
 
-- <main> <section> <footer> use.
+- main, section, footer used.
 - BEM naming scheme from the beginning (though I did mix-and-match a little bit with non-BEM).
 - Mobile-first, fully responsive, and a properly different 1000px @media query layout (which was a little tricky).
 - Really tried to style everything consistently, and used UI best-practice for padding/margins/colour contrasts etc.  Added a bit of pizzaz with the h1/h2 styling.  I'll experiment later with removing the default list styling, and use pills instead.  Buttons are hrefs styled like buttons.  Visually they look weird, think I'll change the colours later.
