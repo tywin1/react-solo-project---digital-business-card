@@ -1,0 +1,5 @@
+- **The naming style is mixed.** You use descendants (`.info h2`, `.info a`) alongside BEM (`.info-social-button__email`). Pick one. For example, give the buttons a shared `.info-social-button` class with a modifier for each colour, instead of styling `.info-social-buttons button` plus two separate hover selectors.
+- **`.info > :not(img)` is clever but opaque.** It also pads the buttons wrapper. A comment, or padding on the text elements via a wrapper, would be clearer.
+
+## React and project files
+- `index.html`: put `<meta charset>` first in `<head>`. Import the CSS in `index.jsx` (`import "./index.css"`) instead of a `<link>`, which gives you bundling and HMR. Loading all of Font Awesome from a CDN for two icons is heavy. Consider inline SVGs or `react-icons`, or at least add `crossorigin` and `integrity` to the link.
